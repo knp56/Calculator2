@@ -4,8 +4,9 @@ class Calculator:
     def __init__(self):
         x = 2 + 2
         self.result = x;
-        pass
+        #pass
 
     def add(self, a, b):
         c = a + b
+        result = 0
         return c
