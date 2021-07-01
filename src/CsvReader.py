@@ -6,12 +6,15 @@ def ClassFactory(class_name, dictionary):
 
 class CsvReader:
 
+    data = []
+
     def __init__(self,filepath):
         self.opdata = []
         with open(filepath) as text_data:
             csv_data = csv.DictReader(text_data)
             for row in csv_data:
                 self.opdata.append(row)
+                self.data.append(row)
         text_data.close()
         pass
 
