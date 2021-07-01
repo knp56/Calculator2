@@ -8,7 +8,10 @@ def subtract(a,b):
     return int(a) - int(b)
 
 def multiply(a,b):
-    return a * b
+    a = int(a)
+    b = int(b)
+    c = a * b
+    return c
 
 def divide(a,b):
     return a / b

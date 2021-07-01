@@ -1,16 +1,24 @@
 import unittest
-from CsvReader import CsvReader, classfactory
-from pprint import pprint
+from CsvReader import CsvReader, ClassFactory
+#from pprint import pprint
 
 class MyTestCase(unittest.TestCase):
 
     def setUp(self) -> None:
-        self.csv_reader = CsvReader('addition.csv')
+        self.csv_reader = CsvReader('/src/addition.csv')
+        self.csv_reader = CsvReader('/src/subtraction.csv')
+        self.csv_reader = CsvReader('/src/multiply.csv')
+        self.csv_reader = CsvReader('/src/division.csv')
+        self.csv_reader = CsvReader('/src/square.csv')
+        self.csv_reader = CsvReader('/src/square_root.csv')
+
 
     def test_return_data_as_objects(self):
-        value1 = self.csv_reader.return_data_as_objects('Value 1')
-        self.assertIsInstance(value1,list)
-        test_class = classfactory('Value 1',self.csv_reader.data[0])
+        result = self.csv_reader.return_data_as_objects('results')
+        self.assertIsInstance(result,list)
+        test_class = ClassFactory('results',self.csv_reader.data[0])
+        for results in result:
+            self.assertEqual(results.Value1,test_class.Value2)
 
 
 if __name__ == '__main__':
