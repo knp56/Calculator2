@@ -14,7 +14,7 @@ def multiply(a,b):
     return c
 
 def divide(a,b):
-    return a / b
+    return int(a) / int(b)
 
 def square(a):
     return int(a) ** 2
