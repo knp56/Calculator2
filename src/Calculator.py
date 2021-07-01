@@ -2,7 +2,7 @@ import math
 from CsvReader import CsvReader
 
 def addition(a,b):
-    return a + b
+    return int(a) + int(b)
 
 def subtract(a,b):
     return int(a) - int(b)
@@ -17,7 +17,7 @@ def divide(a,b):
     return a / b
 
 def square(a):
-    return a ** 2
+    return int(a) ** 2
 
 def square_root(a):
     return math.sqrt(a)
