@@ -5,12 +5,12 @@ from CsvReader import CsvReader, ClassFactory
 class MyTestCase(unittest.TestCase):
 
     def setUp(self) -> None:
-        self.csv_reader = CsvReader('/src/addition.csv')
-        self.csv_reader = CsvReader('/src/subtraction1.csv')
-        self.csv_reader = CsvReader('/src/multiply.csv')
-        self.csv_reader = CsvReader('/src/division.csv')
-        self.csv_reader = CsvReader('/src/square.csv')
-        self.csv_reader = CsvReader('/src/square_root.csv')
+        self.csv_reader = CsvReader('/src/Tests/Data/addition.csv')
+        self.csv_reader = CsvReader('/src/Tests/Data/subtraction1.csv')
+        self.csv_reader = CsvReader('/src/Tests/Data/multiply.csv')
+        self.csv_reader = CsvReader('/src/Tests/Data/division.csv')
+        self.csv_reader = CsvReader('/src/Tests/Data/square.csv')
+        self.csv_reader = CsvReader('/src/Tests/Data/square_root.csv')
 
 if __name__ == '__main__':
     unittest.main()
