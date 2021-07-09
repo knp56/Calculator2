@@ -1,5 +1,8 @@
 FROM python:3
 
-ADD src /src
+#ADD src /src
+ADD . .
 
-CMD [ "python", "./src/CalculatorTest.py" ]
+RUN pip install --upgrade pip
+
+CMD [ "python", "-m", "unittest", "discover", "-s","Tests" ]
