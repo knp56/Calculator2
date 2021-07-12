@@ -10,6 +10,14 @@ class CsvReader:
 
     def __init__(self,filepath):
         self.opdata = []
+
+        # self.data = []
+        # with open(absolute_path(filepath)) as text_data:
+        #     csv_data = csv.DictReader(text_data)
+        #     for row in csv_data:
+        #         self.data.append(row)
+        # pass
+
         try:
             with open(absolute_path(filepath)) as text_data:
                 csv_data = csv.DictReader(text_data)
