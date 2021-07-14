@@ -1,6 +1,6 @@
 
 #from CsvReader import CsvReader
-from src.Calculator.Subtraction import subtraction
+from src.Calculator.Subtraction import subtract
 from src.Calculator.Addition import addition
 from src.Calculator.Multiplication import multiply
 from src.Calculator.Division import divide

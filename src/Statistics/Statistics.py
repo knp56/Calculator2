@@ -1,4 +1,4 @@
-from Calculator.Calculator import Calculator
+from src.Calculator.Calculator import Calculator
 from src.Statistics.SampleMean import sample_mean
 from src.Statistics.SampleMedian import sample_median
 from src.Statistics.SampleMode import sample_mode
@@ -8,7 +8,7 @@ from src.Statistics.SampleDeviation import sample_deviation
 
 
 class Statistics(Calculator):
-    data = []
+    #data = []
 
     def __init__(self):
         #self.data=CsvReader(filepath)

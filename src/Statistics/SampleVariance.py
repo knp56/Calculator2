@@ -1,6 +1,6 @@
-from Calculator.Square import square
-from Calculator.Division import divide
-from Statistics.SampleMean import sample_mean
+from src.Calculator.Square import square
+from src.Calculator.Division import divide
+from src.Statistics.SampleMean import sample_mean
 
 
 def sample_variance(num):

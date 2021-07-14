@@ -1,6 +1,6 @@
-from Calculator.Division import divide
-from Calculator.Subtraction import subtract
-from Calculator.Addition import addition
+from src.Calculator.Division import divide
+from src.Calculator.Subtraction import subtract
+from src.Calculator.Addition import addition
 
 
 def sample_median(num):

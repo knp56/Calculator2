@@ -7,3 +7,19 @@ def getSample(data,sample_size):
             text_data.write(num)
     text_data.close()
     return random_values
+
+#one value with seed
+# def getSample(one,two):
+#      random.seed(0)
+#      if isinstance(one, float) and isinstance(two, float):
+#          return random.randint(one,two)
+#      if isinstance(one, int) and isinstance(two, int):
+#         return random.randint(one,two)
+#
+# #one value without seed
+# def getSample(one, two):
+#     random.seed(0)
+#     if isinstance(one, float) and isinstance(two, float):
+#         return random.randint(one, two)
+#     if isinstance(one, int) and isinstance(two, int):
+#         return random.randint(one, two)

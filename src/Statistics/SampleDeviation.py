@@ -1,4 +1,4 @@
-from Calculator.SquareRoot import square_root
+from src.Calculator.SquareRoot import square_root
 from src.Statistics.SampleVariance import sample_variance
 
 def sample_deviation(num):
