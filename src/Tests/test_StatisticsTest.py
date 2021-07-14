@@ -1,5 +1,6 @@
 import unittest
 import numpy
+import statistics
 from scipy import stats
 #from CsvReader.CsvReader import CsvReader
 #from Calculator.Calculator import Calculator
@@ -23,7 +24,7 @@ class MyTestCase(unittest.TestCase):
             for row in lines:
                 number=int(row)
                 mean_data.append(number)
-        self.assertEqual(self.statistics.sample_mean(mean_data), numpy.mean(mean_data))
+        self.assertEqual(self.statistics.sample_mean(mean_data), statistics.mean(mean_data))
         pprint(mean_data)
         pprint(self.statistics.sample_mean(mean_data))
         # with open('src/Tests/Data/SampleAnswers.csv') as sample_answers:
@@ -39,8 +40,7 @@ class MyTestCase(unittest.TestCase):
             for row in lines:
                 number=int(row)
                 variance_data.append(number)
-        self.assertEqual(self.statistics.sample_variance(variance_data), numpy.var(variance_data))
-        pprint(variance_data)
+        self.assertAlmostEqual(self.statistics.sample_variance(variance_data), statistics.variance(variance_data))
         pprint(self.statistics.sample_variance(variance_data))
 
     def test_sample_deviation(self):
@@ -51,7 +51,7 @@ class MyTestCase(unittest.TestCase):
             for row in lines:
                 number=int(row)
                 std_data.append(number)
-        self.assertEqual(self.statistics.sample_deviation(std_data), numpy.std(std_data))
+        self.assertEqual(self.statistics.sample_deviation(std_data), statistics.stdev(std_data))
         pprint(std_data)
         pprint(self.statistics.sample_deviation(std_data))
 
@@ -63,7 +63,7 @@ class MyTestCase(unittest.TestCase):
             for row in lines:
                 number = int(row)
                 median_data.append(number)
-        self.assertEqual(self.statistics.sample_median(median_data), numpy.median(median_data))
+        self.assertEqual(self.statistics.sample_median(median_data), statistics.median(median_data))
         pprint(median_data)
         pprint(self.statistics.sample_deviation(median_data))
 
@@ -75,7 +75,7 @@ class MyTestCase(unittest.TestCase):
             for row in lines:
                 number = int(row)
                 mode_data.append(number)
-        self.assertEqual(self.statistics.sample_mode(mode_data), stats.mode(mode_data))
+        self.assertEqual(self.statistics.sample_mode(mode_data), statistics.mode(mode_data))
         pprint(mode_data)
         pprint(self.statistics.sample_mode(mode_data))
 

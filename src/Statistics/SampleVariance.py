@@ -1,6 +1,7 @@
 from src.Calculator.Square import square
 from src.Calculator.Division import divide
 from src.Statistics.SampleMean import sample_mean
+from pprint import pprint
 
 
 def sample_variance(num):
@@ -10,8 +11,8 @@ def sample_variance(num):
         num_values = len(num)
         x = 0
         for i in num:
-            x = x + square(i-population_mean)
-        return round(divide(x, num_values), 5)
+            x = x + ((i-population_mean)**2)
+        return divide(x, num_values-1)
     except ZeroDivisionError:
         print("Cannot Divide by 0")
     except ValueError:
