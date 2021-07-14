@@ -1,7 +1,7 @@
 FROM python:latest
 
 #ADD src /src
-ADD . /src
+ADD src /src
 
 ENV PYTHONPATH "${PYTHONPATH}:/src/Calculator:/src/CsvReader:/src/Tests:/src/Operations:/src/Statistics:/src"
 
