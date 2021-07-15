@@ -1,4 +1,4 @@
-from Tests.Calculator import Calculator
+from Test.Calculator import Calculator
 from src.Statistics.SampleMean import sample_mean
 from src.Statistics.SampleMedian import sample_median
 from src.Statistics.SampleMode import sample_mode

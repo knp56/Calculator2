@@ -19,7 +19,7 @@ class MyTestCase(unittest.TestCase):
     def test_sample_mean(self):
         pprint('Mean ===============================')
         mean_data= []
-        with open('src/Tests/Data/DataSample1.csv') as text_data:
+        with open('src/Test/Data/DataSample1.csv') as text_data:
             lines = text_data.readlines()
             for row in lines:
                 number=int(row)
@@ -27,7 +27,7 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(self.statistics.sample_mean(mean_data), statistics.mean(mean_data))
         pprint(mean_data)
         pprint(self.statistics.sample_mean(mean_data))
-        # with open('src/Tests/Data/SampleAnswers.csv') as sample_answers:
+        # with open('src/Test/Data/SampleAnswers.csv') as sample_answers:
         #     for row in sample_answers:
         #         self.assertEqual(self.Statistics.sample_mean(mean_data),))
 
@@ -35,7 +35,7 @@ class MyTestCase(unittest.TestCase):
     def test_sample_variance(self):
         pprint('Sample Variance =====================')
         variance_data=[]
-        with open('src/Tests/Data/DataSample1.csv') as text_data:
+        with open('src/Test/Data/DataSample1.csv') as text_data:
             lines = text_data.readlines()
             for row in lines:
                 number=int(row)
@@ -46,7 +46,7 @@ class MyTestCase(unittest.TestCase):
     def test_sample_deviation(self):
         pprint("Standard Deviation ===================")
         std_data= []
-        with open('src/Tests/Data/DataSample1.csv') as text_data:
+        with open('src/Test/Data/DataSample1.csv') as text_data:
             lines = text_data.readlines()
             for row in lines:
                 number=int(row)
@@ -58,7 +58,7 @@ class MyTestCase(unittest.TestCase):
     def test_sample_median(self):
         pprint("Median ===================")
         median_data = []
-        with open('src/Tests/Data/DataSample1.csv') as text_data:
+        with open('src/Test/Data/DataSample1.csv') as text_data:
             lines = text_data.readlines()
             for row in lines:
                 number = int(row)
@@ -70,7 +70,7 @@ class MyTestCase(unittest.TestCase):
     def test_sample_mode(self):
         pprint("Mode ===================")
         mode_data = []
-        with open('src/Tests/Data/DataSample1.csv') as text_data:
+        with open('src/Test/Data/DataSample1.csv') as text_data:
             lines = text_data.readlines()
             for row in lines:
                 number = int(row)
