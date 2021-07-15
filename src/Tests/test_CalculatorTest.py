@@ -1,7 +1,7 @@
 import unittest
 
-from src.Calculator.Calculator import Calculator
-from src.CsvReader.CsvReader import CsvReader
+from Tests.Calculator import Calculator
+from Tests.CsvReader import CsvReader
 from pprint import pprint
 
 class MyTestCase(unittest.TestCase):

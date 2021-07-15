@@ -1,5 +1,5 @@
 
-![Build Status](https://travis-ci.com/knp56/Calculator2.svg?branch=main)
+![Build Status](https://travis-ci.com/knp56/Calculator2.svg?branch=master)
 # IS 601 - Calculator Project
 <h1>Project 2 - Statistics</h1>
 

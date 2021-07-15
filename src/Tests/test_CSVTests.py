@@ -1,5 +1,7 @@
 import unittest
-from src.CsvReader.CsvReader import CsvReader, ClassFactory
+from Tests.CsvReader import CsvReader
+
+
 #from pprint import pprint
 
 class MyTestCase(unittest.TestCase):
