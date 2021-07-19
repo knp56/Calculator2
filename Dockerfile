@@ -3,7 +3,7 @@ FROM python:latest
 #ADD src /src
 ADD . /src
 
-ENV PYTHONPATH "${PYTHONPATH}:/src/Test/Calculator:/src/Test/CsvReader:/src/Statistics:/src"
+ENV PYTHONPATH "${PYTHONPATH}:/src/Calculator:src/CsvReader:/src/Test:/src/Statistics:/src"
 
 RUN pip install --upgrade pip
 RUN pip install numpy
